@@ -11,10 +11,10 @@ app.listen(3000, function(){
 });
 
 app.get("/", (req,res)=>{
-    res.sendFile(__dirname+"/loadingPage.html");
+    res.sendFile(__dirname+"/index.html");
 });
 
-app.get("/index", (req,res)=>{
-    res.sendFile(__dirname+"/src/index.html");
+app.get("/algolizer", (req,res)=>{
+    res.sendFile(__dirname+"/src/algolizer.html");
 });
 
