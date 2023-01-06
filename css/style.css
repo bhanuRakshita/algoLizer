@@ -1,0 +1,265 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* SVG CCS */
+
+#loading-svg-logo {
+    position: absolute;
+    width: 10%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+#loading-svg-name {
+    position: absolute;
+    width: 35%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: fill-yellow 0.5s ease forwards 5.8s;
+
+}
+
+#loading-svg-logo path:nth-child(1){
+    stroke-dasharray: 763.514892578125;
+    stroke-dashoffset: 763.514892578125;
+    animation: line-animation 0.5s ease forwards;
+    /* animation: fill-crimson 0.1s ease forwards 0.5s; */
+
+    
+}
+
+#loading-svg-logo path:nth-child(2){
+    opacity: 0;
+    animation: appear 0.5s ease forwards 0.6s;
+    /* animation: fill-white 0.5s ease forwards 1.0s; */
+
+
+}
+
+#loading-svg-name path:nth-child(1){
+
+    stroke-dasharray: 518.442626953125;
+    stroke-dashoffset: 518.442626953125;
+    animation: line-animation 2s ease forwards 0.9s;
+
+}
+
+#loading-svg-name path:nth-child(2){
+
+    stroke-dasharray: 310.7328186035156;
+    stroke-dashoffset: 310.7328186035156;
+    animation: line-animation 2s ease forwards 1.2s;
+    
+}
+
+#loading-svg-name path:nth-child(3){
+    stroke-dasharray: 263.9473571777344;
+    stroke-dashoffset: 263.9473571777344;    
+    animation: line-animation 2s ease forwards 1.5s;
+
+}
+
+#loading-svg-name path:nth-child(4){
+    stroke-dasharray: 202.87994384765625;
+    stroke-dashoffset: 202.87994384765625;
+    animation: line-animation 2s ease forwards 1.8s;
+
+}
+
+#loading-svg-name path:nth-child(5){
+    stroke-dasharray: 225.1362762451172;
+    stroke-dashoffset: 225.1362762451172;
+    animation: line-animation 2s ease forwards 2.1s;
+
+}
+
+#loading-svg-name path:nth-child(6){
+    stroke-dasharray: 442.683837890625;
+    stroke-dashoffset: 442.683837890625;
+    animation: line-animation 2s ease forwards 2.4s;
+
+}
+
+#loading-svg-name path:nth-child(7){
+    stroke-dasharray: 249.25009155273438;
+    stroke-dashoffset: 249.25009155273438;
+    animation: line-animation 2s ease forwards 2.7s;
+
+}
+
+#loading-svg-name path:nth-child(8){
+    stroke-dasharray: 346.8101806640625;
+    stroke-dashoffset: 346.8101806640625;
+    animation: line-animation 2s ease forwards 3.0s;
+
+}
+
+#loading-svg-name path:nth-child(9){
+    stroke-dasharray: 230.56748962402344;
+    stroke-dashoffset: 230.56748962402344;
+    animation: line-animation 2s ease forwards 3.3s;
+
+}
+
+#loading-svg-name path:nth-child(10){
+    stroke-dasharray: 318.0982360839844;
+    stroke-dashoffset: 318.0982360839844;
+    animation: line-animation 2s ease forwards 3.6s;
+
+}
+
+#loading-svg-name path:nth-child(11){
+    stroke-dasharray: 123.36261749267578;
+    stroke-dashoffset: 123.36261749267578;
+    animation: line-animation 2s ease forwards 3.9s;
+
+}
+
+#loading-svg-name path:nth-child(12){
+    stroke-dasharray: 252.88775634765625;
+    stroke-dashoffset: 252.88775634765625;
+    animation: line-animation 2s ease forwards 4.2s;
+
+}
+
+#loading-svg-name path:nth-child(13){
+    stroke-dasharray: 249.49598693847656;
+    stroke-dashoffset: 249.49598693847656;
+    animation: line-animation 2s ease forwards 4.5s;
+
+}
+
+@keyframes appear {
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes line-animation {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill-white{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: white;
+    }
+}
+
+@keyframes fill-crimson {
+
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: crimson;
+    }
+    
+}
+
+@keyframes fill-yellow {
+
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: #ff8906;
+    }
+    
+}
+
+/* ------------------------ */
+
+.glow {
+    text-shadow: 0 0 20px red, 0 0 20px red, 0 0 20px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
+}
+  
+
+#heading-section{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#controls-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 20%;
+}
+
+.sort-control {
+    margin-left: 20px;
+}
+
+select {
+    font-size: 15px;
+    border-color: red;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.control-btn {
+    height: 30px;
+    width: 50px;
+    border-color: red;
+    background-color: black;
+}
+
+.fa {
+    color: red;
+}
+
+.sliders-div {
+    transform: translateY(-20%);
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 2px;
+    background: white;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: red;
+    
+}
+
+.data-section {
+    min-height: 380px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 0;
+    position: relative;
+}
+
+.bar {
+    width: 28px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transition: 0.2s all ease;
+}
+
+
