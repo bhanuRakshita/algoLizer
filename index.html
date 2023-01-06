@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Visualizer</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/ba668ad327.js" crossorigin="anonymous"></script>>
+<body>
+
+    <section id="heading-section" class="heading-section">
+        <h1>ALGORITHM VISUALIZER</h1>
+    </section>
+
+
+    <section id="controls-section">
+        <div id="sort-types" class="sort-control">
+
+            <select name="select-sort-types" id="select-sort-types">
+                <option value="hide">-- Select sort type --</option>
+                <option value="selection">Selection Sort</option>
+                <option value="bubble">Bubble Sort</option>
+                <option value="insertion" selected>Insertion Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="quick">Quick Sort</option>
+                <!-- <option value="heap">Heap Sort</option>
+                <option value="iterative-heap">Iterative Heap Sort</option>
+                <option value="counting">Counting Sort</option> -->
+            </select>
+
+        </div>
+
+        <div id="shuffle" class="sort-control">
+
+            <button id="shuffle-btn" class="control-btn">
+                <i class="fa fa-solid fa-shuffle"></i>
+            </button>
+        </div>
+
+        <div id="start" class="start">
+            <button id="start-btn" class="control-btn">
+                <i class="fa fa-solid fa-play"></i>
+        </div>
+
+        <div class="sliders-div">
+            <div class="range-slider" class="sort-control">
+                <label for="myRange" style="color: white;">Range</label><input type="range" min="10" max="200" value="10" class="slider" id="myRange" onchange="getNumBars()">
+            </div>
+            <div class="speed-slider" class="sort-control">
+                <label for="mySpeed" style="color: white;">Speed</label><input type="range" min="50" max="500" value="10" class="slider" id="mySpeed" onchange="getSpeed()">
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section id="data-section" class="data-section">
+
+    </section>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
