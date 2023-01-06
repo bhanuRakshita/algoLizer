@@ -1,5 +1,5 @@
 const timeout = setTimeout(function goTo() {
-    window.location.href= "/algolizer";
+    window.location.href= "/src/algolizer.html";
 }, 7000);
 
 const loadingSvgLogo = document.querySelectorAll("#loading-svg-logo path");
